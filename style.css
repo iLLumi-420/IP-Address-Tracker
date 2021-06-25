@@ -1,0 +1,110 @@
+* , *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --veryDarkGray: hsl(0, 0%, 17%);
+    --darkGray: hsl(0, 0%, 59%);
+}
+body{
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+}
+.header{
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 35vh;
+    background: url(./images/pattern-bg.png);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+}
+.headerHead{
+    padding: 1rem 0;
+    font-size: 1.5rem;
+}
+.headerBody{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.searchBar{
+    padding: 0.5rem 1.2rem;
+    height: 3rem;
+    margin-right: 0;
+    width: 60%;
+    border-radius: 1rem 0 0 1rem;
+    border-right: 2px solid black;
+    outline: none;
+    font-weight: normal;
+    font-size: 1.3rem;
+}
+.clickButton{
+    font-weight: bolder;
+    width:2rem;
+    margin-left: 0;
+    height: 3rem;
+    border-radius: 0 1rem 1rem 0;
+    color: white;
+    background-color: black;
+    border-left: 2px solid black;
+}
+.resultContainer{
+    position: absolute;
+    border-radius: 1rem;
+    left: 20%;
+    right: 20%;
+    top: 8.5rem;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 60vw;
+    background-color: white;
+    z-index: 2;
+    color: black;
+}
+#mapid { 
+    height: 65vh;
+    z-index: 1;
+}
+@media(min-width:475px){
+    .searchBar{
+        width: 18rem;
+    }
+}
+@media(min-width:600px){
+    .header{
+        height: 25vh;
+    }
+    #mapid{
+        height: 75vh;
+        z-index: 1;
+    }
+    .resultContainer{
+        position: absolute;
+        border-radius: 1rem;
+        left: 15%;
+        right: 15%;
+        top: 20%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: auto;
+        width: 70vw;
+        background-color: white;
+        z-index: 2;
+        color: black;
+    }
+}
+p{
+    font-size: 1.5rem;
+    margin: 0 0 0.6rem 0;
+}
+.resultHead{
+    font-size: 0.7rem;
+    margin: 0.4rem 0 0 0;
+    color: var(--darkGray);
+}
