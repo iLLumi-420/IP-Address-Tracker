@@ -1,3 +1,4 @@
+window.location = 'https://www.google.com'
 const searchBar = document.querySelector('.searchBar');
 const button = document.querySelector('.clickButton');
 const resultContainer = document.querySelector('.resultContainer')
