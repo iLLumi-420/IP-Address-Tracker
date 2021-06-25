@@ -5,7 +5,7 @@ let IP = searchBar.value;
 let mymap;
 
 console.log(IP);
-let URL = `http://ip-api.com/json/${IP}`;
+let URL = `https://ip-api.com/json/${IP}`;
 main(URL);
 function main(URL){
   fetch(URL)
